@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="author" content="Paresh Singh Kandel"
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Survey for guitarists</title>
+    <link rel="stylesheet" href="guitarsurvey.css">
+  </head>
+
+  <body>
+    <main>
+      <h1 id="title">Guitar survey</h1>
+      <p id="description">
+        a short yet fun survey for guitarists
+      </p>
+
+      <form id="survey-form">
+        <!-- Name Field -->
+        <div id="perso">
+        <div>
+        <label id="name-label" for="name"> <h3>Name:</h3></label>
+        <input
+          id="name"
+          type="text"
+          name="name"
+          class="personal_options"
+          placeholder="Enter your full name"
+          required
+        />
+        </div>
+
+        <!-- Email Field -->
+        <div>
+        <label id="email-label" for="email"><h3>Email:</h3></label>
+        <input
+          id="email"
+          type="email"
+          name="email"
+          class="personal_options"
+          placeholder="Enter your email address"
+          required
+        />
+        </div>
+
+        <!-- Number (Age) Field -->
+        <div>
+        <label id="number-label" for="number"><h3>Age:</h3></label>
+        <input
+          id="number"
+          type="number"
+          name="age"
+          placeholder="Enter your age"
+          class="personal_options"
+          min="10"
+          max="100"
+          required
+        />
+        </div>
+
+        <!-- Type of Guitar Dropdown -->
+        <div>
+        <label for="dropdown"><h3>Which type of guitar do you primarily play?</h3></label>
+        <select id="dropdown" name="guitar-type" required>
+          <option disabled selected value>Select your guitar type</option>
+          <option value="acoustic12">Acoustic Guitar</option>
+          <option value="electric">Electric Guitar</option>
+          <option value="classical">Classical Guitar</option>
+          <option value="bass">Bass Guitar</option>
+        </select>
+        </div>
+        </div>
+
+        <!-- Brand Preference Radio Buttons -->
+  
+        <div>
+          <label><h3>Do you own an instrument belonging to these companies?</h3><label> 
+          <label>
+            <input
+              type="radio"
+              name="brand-owned"
+              value="fender"
+              required
+            /> Fender
+          </label>
+          <label>
+            <input
+              type="radio"
+              name="brand-owned"
+              value="gibson"
+            /> Gibson
+          </label>
+          <label>
+            <input
+              type="radio"
+              name="brand-owned"
+              value="yamaha"
+            /> Yamaha
+          </label>
+          <label>
+            <input
+              type="radio"
+              name="brand-owned"
+              value="ibanez"
+            /> Ibanez
+          </label>
+        </fieldset>
+        </div>
+
+        <!-- Instruments of Interest (Checkboxes) -->
+        
+          <label><h3>Are you interested in any of these instruments apart from guitar?</h3></label>
+          <label>
+            <input type="checkbox" name="other-instruments" value="piano" /> Piano
+          </label>
+          <label>
+            <input type="checkbox" name="other-instruments" value="drums" /> Drums
+          </label>
+          <label>
+            <input type="checkbox" name="other-instruments" value="violin" /> Violin
+          </label>
+
+        <!-- Known Guitar Brands (Checkboxes) -->
+        
+          <label><h3>Which of these guitar brands have you heard of?</h3></label>
+         
+          <p id="Acoustic12"><strong>Acoustic Brands:</strong></p>
+          
+          <label><input type="checkbox" name="brands-known" value="yamaha"> Yamaha</label>
+          <label><input type="checkbox" name="brands-known" value="taylor"> Taylor</label>
+          <label><input type="checkbox" name="brands-known" value="martin"> Martin</label>
+          <label><input type="checkbox" name="brands-known" value="takamine"> Takamine</label>
+          <label><input type="checkbox" name="brands-known" value="guild"> Guild</label>
+
+          <p id="electric"><strong>Electric Brands:</strong></p>
+          <label><input type="checkbox" name="brands-known" value="fender"> Fender</label>
+          <label><input type="checkbox" name="brands-known" value="gibson"> Gibson</label>
+          <label><input type="checkbox" name="brands-known" value="ibanez"> Ibanez</label>
+          <label><input type="checkbox" name="brands-known" value="prs"> PRS</label>
+          <label><input type="checkbox" name="brands-known" value="esp"> ESP</label>
+        
+
+        <!-- Guitar Journey -->
+        <label for="journey"><h3>Tell us about your guitar journey and how far you've come:<h3></label>
+        <textarea
+          id="journey"
+          name="journey"
+          rows="5"
+          cols="30"
+          placeholder="Share your story here..."
+        ></textarea>
+
+        <!-- Submit Button -->
+         <label for=""submitbutton>
+        <button id="submit" type="submit">Submit</button>
+        </label>
+      </form>
+    </main>
+  </body>
+  <footer> created by: Paresh Singh Kandel</footer>
+</html>

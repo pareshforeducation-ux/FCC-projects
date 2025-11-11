@@ -1,0 +1,80 @@
+
+/* Reset default browser styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Body */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #f4ede4, #d7ccc8);
+  color: #333;
+  line-height: 2;
+  padding: 20px;
+  text-align:center;
+}
+ #Acoustic12, #electric {
+  text-align:center;
+  padding: 15px
+  
+  
+  
+
+}
+
+/* Main container */
+main {
+  max-width: 700px;
+  background-color: #fff;
+  margin: 30px auto;
+  padding: 30px 40px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+}
+
+/* Headings */
+#title {
+  text-align: center;
+  color: #4e342e;
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+
+#description {
+  text-align: center;
+  font-style: italic;
+  margin-bottom: 25px;
+  color: #5d4037;
+}
+#journey {
+  padding: 20px
+}
+#submit{
+  text-align:center;
+  padding:10px
+}
+
+input,
+button,
+select,
+textarea {
+  margin: 0;
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+#personal_options{
+  width:500px;
+}
+
+
+
+/* Labels and Inputs */
+label {
+  display: block;
+  margin-top: 15px;
+  font-weight: 600;
+  color: #3e2723;
+
